@@ -1,9 +1,14 @@
-import { Bell, Search, LogOut } from 'lucide-react';
+import { Bell, Search, LogOut, Menu } from 'lucide-react';
 
-export default function Header() {
+export default function Header({ onMenuToggle }) {
     return (
         <header className="header">
-            <div className="header-title">利益相反(COI) 申告管理システム</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <button className="icon-btn mobile-menu-btn" onClick={onMenuToggle}>
+                    <Menu size={22} />
+                </button>
+                <div className="header-title">利益相反(COI) 申告管理システム</div>
+            </div>
             <div className="header-actions">
                 <button className="icon-btn">
                     <Search size={20} />
@@ -14,7 +19,7 @@ export default function Header() {
                 </button>
                 <div className="user-profile">
                     <div className="avatar">テ</div>
-                    <span>テスト (研究者)</span>
+                    <span className="user-name">テスト (研究者)</span>
                 </div>
                 <button className="icon-btn" title="ログアウト">
                     <LogOut size={20} />

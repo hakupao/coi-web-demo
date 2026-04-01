@@ -14,14 +14,14 @@ export default function Research() {
                     <h1 className="page-title">研究一覧</h1>
                     <p className="page-subtitle">あなたが関与している研究プロジェクトとそのCOI状況を管理します。</p>
                 </div>
-                <div style={{ display: 'flex', gap: 8 }}>
+                <div className="page-header-actions">
                     <button className="btn btn-secondary"><Download size={16} /> PDF/CSV出力</button>
                     <button className="btn btn-secondary"><Bell size={16} /> 通知設定</button>
                     <button className="btn btn-primary"><Plus size={16} /> 新規研究登録</button>
                 </div>
             </div>
 
-            <div className="table-container">
+            <div className="table-container responsive-table">
                 <table className="table">
                     <thead>
                         <tr>
@@ -36,16 +36,16 @@ export default function Research() {
                     <tbody>
                         {researchData.map((res) => (
                             <tr key={res.id}>
-                                <td style={{ fontWeight: 500, color: 'var(--primary-color)' }}>{res.id}</td>
-                                <td style={{ maxWidth: 300 }}>{res.name}</td>
-                                <td>{res.role}</td>
-                                <td>{res.period}</td>
-                                <td>
+                                <td data-label="整理番号" style={{ fontWeight: 500, color: 'var(--primary-color)' }}>{res.id}</td>
+                                <td data-label="研究課題名">{res.name}</td>
+                                <td data-label="役割">{res.role}</td>
+                                <td data-label="実施期間">{res.period}</td>
+                                <td data-label="COI状態">
                                     <span className={`badge badge-${res.status === '承認済' ? 'success' : res.status === '審査中' ? 'warning' : 'danger'}`}>
                                         {res.status}
                                     </span>
                                 </td>
-                                <td>
+                                <td data-label="アクション">
                                     <div style={{ display: 'flex', gap: 8 }}>
                                         <button className="icon-btn" title="編集"><FileEdit size={16} /></button>
                                         <button className="icon-btn" title="申告/申請" style={{ color: 'var(--secondary-color)' }}>

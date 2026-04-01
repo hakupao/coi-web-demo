@@ -19,7 +19,7 @@ export default function Applications() {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', gap: 16, marginBottom: 24, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
+            <div className="tab-bar">
                 <button
                     className="btn"
                     style={{ background: activeTab === 'review' ? 'var(--primary-color)' : 'transparent', color: activeTab === 'review' ? 'white' : 'var(--text-main)', border: activeTab === 'review' ? 'none' : '1px solid transparent' }}
@@ -52,31 +52,31 @@ export default function Applications() {
                         <button className="btn btn-secondary"><Filter size={16} /> 絞り込み</button>
                     </div>
 
-                    <div className="table-container">
+                    <div className="table-container responsive-table">
                         <table className="table">
                             <thead>
                                 <tr>
                                     <th>申請ID</th>
                                     <th>申告者</th>
-                                    <th>申告区分 / 内容</th>
+                                    <th>申告区分</th>
                                     <th>合算金額</th>
                                     <th>提出日</th>
-                                    <th>審査アクション</th>
+                                    <th>審査</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {reviews.map((rev) => (
                                     <tr key={rev.id}>
-                                        <td style={{ fontWeight: 500 }}>{rev.id}</td>
-                                        <td>{rev.researcher}</td>
-                                        <td>{rev.type}</td>
-                                        <td>
+                                        <td data-label="申請ID" style={{ fontWeight: 500 }}>{rev.id}</td>
+                                        <td data-label="申告者">{rev.researcher}</td>
+                                        <td data-label="申告区分">{rev.type}</td>
+                                        <td data-label="合算金額">
                                             {rev.amount.includes('アラート') ? (
                                                 <span style={{ color: 'var(--accent-color)', fontWeight: 600 }}>{rev.amount} <AlertCircle size={14} style={{ display: 'inline', verticalAlign: 'middle' }} /></span>
                                             ) : rev.amount}
                                         </td>
-                                        <td>{rev.date}</td>
-                                        <td>
+                                        <td data-label="提出日">{rev.date}</td>
+                                        <td data-label="審査">
                                             {rev.status === '承認済' ? (
                                                 <span className="badge badge-success">承認完了</span>
                                             ) : (

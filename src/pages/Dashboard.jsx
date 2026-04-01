@@ -23,7 +23,7 @@ export default function Dashboard() {
                 </div>
             </div>
 
-            <div className="grid-3" style={{ gridTemplateColumns: 'repeat(4, 1fr)', marginBottom: 32 }}>
+            <div className="grid-stats" style={{ marginBottom: 32 }}>
                 {stats.map((stat, idx) => (
                     <div className="card stat-card" key={idx}>
                         <div className="stat-icon" style={{ background: `${stat.color}20`, color: stat.color }}>
@@ -40,7 +40,7 @@ export default function Dashboard() {
             <div className="grid-2">
                 <div className="card">
                     <h3 style={{ marginBottom: 16, color: 'var(--primary-color)' }}>最近のアクティビティ</h3>
-                    <div className="table-container">
+                    <div className="table-container responsive-table">
                         <table className="table">
                             <thead>
                                 <tr>
@@ -53,10 +53,10 @@ export default function Dashboard() {
                             <tbody>
                                 {recentActivities.map(act => (
                                     <tr key={act.id}>
-                                        <td><strong>{act.type}</strong></td>
-                                        <td>{act.detail}</td>
-                                        <td style={{ color: 'var(--text-muted)' }}>{act.date}</td>
-                                        <td>
+                                        <td data-label="種類"><strong>{act.type}</strong></td>
+                                        <td data-label="詳細">{act.detail}</td>
+                                        <td data-label="日付" style={{ color: 'var(--text-muted)' }}>{act.date}</td>
+                                        <td data-label="ステータス">
                                             <span className={`badge badge-${act.status === '承認済' ? 'success' : act.status === '要注意' ? 'warning' : 'info'}`}>
                                                 {act.status}
                                             </span>
