@@ -2,34 +2,7 @@
 
 <div align="center">
 
-```svg
-<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-      .coiweb-title {
-        font-family: 'Poppins', sans-serif;
-        font-size: 64px;
-        font-weight: 700;
-        fill: url(#coiwebGradient);
-        letter-spacing: -1px;
-      }
-      .coiweb-subtitle {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        fill: #64748b;
-        letter-spacing: 1px;
-      }
-    </style>
-    <linearGradient id="coiwebGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <text x="400" y="75" text-anchor="middle" class="coiweb-title">COI Web</text>
-  <text x="400" y="105" text-anchor="middle" class="coiweb-subtitle">Conflict of Interest Management Application</text>
-</svg>
-```
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=800&height=80&lines=COI+Web+Demo;Conflict+of+Interest+Management+Application" alt="COI Web Demo"/>
 
 **Complete COI Management Web Application** 🌐
 
@@ -81,20 +54,20 @@ Built with modern React and Vite for optimal performance and developer experienc
 
 ```mermaid
 graph TB
-    A["👤 User Login"] --> B{"Select Module"}
-    B -->|Dashboard| C["📊 Analytics<br/>KPI Overview"]
-    B -->|Research| D["🔬 Research<br/>Management"]
-    B -->|Personal COI| E["📝 Self-Service<br/>Disclosure"]
-    B -->|Applications| F["📋 Workflow<br/>Processing"]
-    B -->|Settings| G["⚙️ User<br/>Configuration"]
-    C --> H["🔄 Data Sync"]
-    D --> H
-    E --> H
-    F --> H
-    G --> H
-    H --> I["✅ COI Records"]
-    style A fill:#06b6d4,stroke:#0891b2,color:#fff
-    style I fill:#10b981,stroke:#059669,color:#fff
+ A[" User Login"] --> B{"Select Module"}
+ B -->|Dashboard| C[" Analytics<br/>KPI Overview"]
+ B -->|Research| D[" Research<br/>Management"]
+ B -->|Personal COI| E[" Self-Service<br/>Disclosure"]
+ B -->|Applications| F[" Workflow<br/>Processing"]
+ B -->|Settings| G["⚙ User<br/>Configuration"]
+ C --> H[" Data Sync"]
+ D --> H
+ E --> H
+ F --> H
+ G --> H
+ H --> I[" COI Records"]
+ style A fill:#06b6d4,stroke:#0891b2,color:#fff
+ style I fill:#10b981,stroke:#059669,color:#fff
 ```
 
 ---
@@ -117,6 +90,14 @@ graph TB
 ---
 
 ## 📄 Pages
+
+### Screenshots
+
+| Dashboard | Applications | Research |
+|:---------:|:------------:|:--------:|
+| ![Dashboard](docs/images/dashboard.png) | ![Applications](docs/images/applications.png) | ![Research](docs/images/research.png) |
+
+
 
 <details>
 <summary><strong>Application Pages Overview</strong></summary>

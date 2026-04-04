@@ -2,34 +2,7 @@
 
 <div align="center">
 
-```svg
-<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-      .coiweb-title {
-        font-family: 'Poppins', sans-serif;
-        font-size: 64px;
-        font-weight: 700;
-        fill: url(#coiwebGradient);
-        letter-spacing: -1px;
-      }
-      .coiweb-subtitle {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        fill: #64748b;
-        letter-spacing: 1px;
-      }
-    </style>
-    <linearGradient id="coiwebGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <text x="400" y="75" text-anchor="middle" class="coiweb-title">COI Web</text>
-  <text x="400" y="105" text-anchor="middle" class="coiweb-subtitle">利益冲突管理应用</text>
-</svg>
-```
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=800&height=80&lines=COI+Web+Demo;利益冲突管理应用" alt="COI Web Demo"/>
 
 **完整的利益冲突管理 Web 应用** 🌐
 
@@ -81,20 +54,20 @@
 
 ```mermaid
 graph TB
-    A["👤 用户登录"] --> B{"选择模块"}
-    B -->|仪表板| C["📊 分析<br/>KPI 概览"]
-    B -->|研究| D["🔬 研究<br/>管理"]
-    B -->|个人 COI| E["📝 自助<br/>披露"]
-    B -->|应用| F["📋 工作流<br/>处理"]
-    B -->|设置| G["⚙️ 用户<br/>配置"]
-    C --> H["🔄 数据同步"]
-    D --> H
-    E --> H
-    F --> H
-    G --> H
-    H --> I["✅ COI 记录"]
-    style A fill:#06b6d4,stroke:#0891b2,color:#fff
-    style I fill:#10b981,stroke:#059669,color:#fff
+ A[" 用户登录"] --> B{"选择模块"}
+ B -->|仪表板| C[" 分析<br/>KPI 概览"]
+ B -->|研究| D[" 研究<br/>管理"]
+ B -->|个人 COI| E[" 自助<br/>披露"]
+ B -->|应用| F[" 工作流<br/>处理"]
+ B -->|设置| G["⚙ 用户<br/>配置"]
+ C --> H[" 数据同步"]
+ D --> H
+ E --> H
+ F --> H
+ G --> H
+ H --> I[" COI 记录"]
+ style A fill:#06b6d4,stroke:#0891b2,color:#fff
+ style I fill:#10b981,stroke:#059669,color:#fff
 ```
 
 ---
@@ -116,7 +89,15 @@ graph TB
 
 ---
 
-## 📄 应用页面
+## 📄
+
+### 界面截图
+
+| 仪表板 | 申请管理 | 研究一览 |
+|:------:|:-------:|:-------:|
+| ![仪表板](docs/images/dashboard.png) | ![申请管理](docs/images/applications.png) | ![研究一览](docs/images/research.png) |
+
+ 应用页面
 
 <details>
 <summary><strong>应用页面概览</strong></summary>
