@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=800&height=80&lines=COI+Web+Demo;利益冲突管理应用" alt="COI Web Demo"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=800&height=80&lines=COI+Web+Demo;%E5%88%A9%E7%9B%8A%E5%86%B2%E7%AA%81%E7%AE%A1%E7%90%86%E5%BA%94%E7%94%A8" alt="COI Web Demo"/>
 
 **完整的利益冲突管理 Web 应用** 🌐
 
